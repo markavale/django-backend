@@ -1,4 +1,4 @@
-# djangovue-backend-boilerplate
+# django-backend-boilerplate
 
 ## Project Details
 This Template includes dj-rest-auth for authentication and Token authentication.
@@ -19,13 +19,13 @@ python manage.py migrate
 ```
 
 ## Create .env file for your env variables
-```
 Copy paste this and replace it with your own variables
+```
 [settings]
-SECRET_KEY = 'sx!6l+&+d(hys6bz)x5lrdfu2$k=6db&tsjz2b&qg-w-nuj#r+'
+SECRET_KEY = 'your_awesome_secret_key!'
 DJANGO_SETTINGS_MODULE = 'base.settings.dev'
 
-[mysql-database-config] if you're using mysql
+[mysql-database-config | if you're using mysql] 
 NAME=your_db_name
 USER=your_db_user
 PASSWORD=your_db_password
