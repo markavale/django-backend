@@ -1,21 +1,25 @@
 # django-backend-boilerplate
 
 ## Project Details
-This Template includes dj-rest-auth for authentication and Token authentication.
-
+This Template includes dj-rest-auth for authentication, Token authentication and VueJS library installed in static folder.
 
 ## Project setup for virtualenv users
 ```
-python3 -m venv env
+python3 -m venv venv
+source venv/bin/activate (linux/Mac) || cd venv/scripts/ => activate (windows)
 pip install -r requirements.txt
+python manage.py makemigrations users
 python manage.py migrate
+python manage.py runserver
 ```
 
 ## Project setup for pipenv users
 ```
-pipenv shell
 pipenv install
+pipenv shell
+python manage.py makemigrations users
 python manage.py migrate
+python manage.py runserver
 ```
 
 ## Create .env file for your env variables
